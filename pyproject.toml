@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cerrlib"
+version = "0.1.0"
+description = "Custom Errors/Exceptions Library for Python..."
+authors = [{name = "vfm-sb", email = "vfm-sb@proton.me"}]
+requires-python = ">=3.11.8"
+dependencies = []
+readme = "README.md"
+license = {file = "LICENCE"}
+keywords = ["cerrlib", "custom errors", "custom exceptions"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Programming Language :: Python :: 3.11",
+  "Natural Language :: English"
+]
+
+#[project.urls]
+# Homepage = ""
+# Documentation = ""
+# Repository = ""
+# Issues = ""
+# Changelog = ""
