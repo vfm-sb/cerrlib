@@ -1,12 +1,14 @@
 """Custom Type Exceptions"""
 
+from typing import Type
+
 
 class ObjectMismatchError(TypeError):
     def __init__(
         self,
         message: str = "Objects Must Match",
-        expected: object | None = None,
-        received: object | None = None
+        expected: Type[object] | None = None,
+        received: Type[object] | None = None
     ) -> None:
         self.message = message
         if expected and received:
@@ -20,8 +22,7 @@ class InvalidOperandError(ObjectMismatchError):
     def __init__(
         self,
         message: str = "Invalid Operand Type",
-        expected: object | None = None,
-        received: object | None = None
+        expected: Type[object] | None = None,
+        received: Type[object] | None = None
     ) -> None:
-        self.message = message
-        super().__init__(self.message, expected, received)
+        super().__init__(message, expected, received)
